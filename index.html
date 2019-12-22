@@ -2,103 +2,155 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <style>
-		.led-box {
-		  height: 10px;
-		  width: 25%;
-		  margin: 5px 0;
-		  float: left;
-		}
-		.led-red {
-		  margin: 0 auto;
-		  width: 12px;
-		  height: 12px;
-		  background-color: #F00;
-		  border-radius: 50%;
-		  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 0px 0px;
-		}
-		.square {
-		  width: 100px;
-		  border: 1px solid black;
-		  margin: 20px;
-		  
+		#navbar {
+  overflow: hidden;
+  background-color: green;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
+
+#navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+#navbar-rightside {
+  float: right;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  background-color: grey;
+  padding-top: 160px;
+}
+
+h1 {
+  font-weight: 700;
+  text-align: center;
+}
+
+.part:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.part_one {
+  float: left;
+  width: 30%;
+  /*padding: 10px;*/
+  height: 300px; 
+  margin: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#projects {
+  padding-top: 30px;
+  /*background-color: purple;*/
+}
+
+.project-title {
+  background-color: orange;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#contact{
+  padding-top: 20px;
+  background-color: darkgrey;
+  text-align: center;
+  height: 180px;
+}
+
+#contact a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  /*padding: 5px;*/
+  margin-bottom: -10px;
+}
+
+i {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    margin: 5px;
+    font-size: 25px;
+  }
+}
+
+
+
     </style>
 </head>
 <body>
-   <!-- <div class="container">          
-	  <table class="table table-bordered table-sm" style="width: 20%;">
-	    <thead>
-	      <tr>
-	        <th>Firstname</th>
-	        <th>Lastname</th>
-	        <th>Email</th>
-	        <th>Addres</th>
-	        <th>number</th>
-	        <th>name</th>
-	      </tr>
-	    </thead>
-	    <tbody>
-	      <tr>
-	        <td>John</td>
-	        <td>
-	           <div class="led-box">
-                 <div class="led-red">
-                 </div>
-               </div>
-               <div class="led-box">
-                 <div class="led-red" style="background-color: green; margin-left: 10px;">
-                 </div>
-               </div>
-            </td>
-	        <td>
-	           <div class="led-box">
-                 <div class="led-red">
-                 </div>
-               </div>
-            </td>
-	        <td>
-	           <div class="led-box">
-                 <div class="led-red">
-                 </div>
-               </div>
-            </td>
-	        <td>
-	          <div class="led-box">
-                 <div class="led-red">
-                 </div>
-              </div>
-            </td>
-            <td>
-              <div class="led-box">
-                 <div class="led-red">
-                 </div>
-              </div>
-            </td>
-	      </tr>
-	    </tbody>
-	  </table>
-   </div>     -->
+  	
+<div id="navbar">
+  		<div id="navbar-rightside">
+    		<a href="#welcome-section">Home</a>
+    		<a href="#projects">About</a>
+    		<a href="#contact">Contact</a>
+  		</div>
+	</div>
 
-   <div class="square">
-    <p style="text-align: center;"><strong>WIFI</strong></p>
-    <p>
-    	<span>
-    		<div class="led-box">
-                 <div class="led-red">
-                 </div>
-               </div>
-        </span>Low</p>
-    <p>
-   	    <span>
-   	    	<div class="led-box">
-                 <div class="led-red">
-                 </div>
-               </div>
-        </span>High</p>
-  </div>
+	<section id="welcome-section">
+		<h1 style="font-weight: 700;">Hey I am Yogesh</h1>
+		<p>a web developer</p>
+	</section>
+
+	<section id="projects">
+		<h1>My Project</h1>
+		<div class="part">
+			<div class="part_one"> 
+				<a href="https://codepen.io/yogesh8511/pen/PoodayL" target="_blanck">
+					<img src="https://cdn.narendramodi.in/cmsuploads/0.68012900_1573295006_banner.jpg" width="258px;" height="220px;" class="project-tile">
+					<p class="project-title">Build a Tribute Page</p>
+				</a>
+		  	</div>
+		  	<div class="part_one">
+		  		<a href="https://codepen.io/yogesh8511/pen/BaaqrGj" target="_blanck">
+		  			<img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2012/01/forms-tench-01.png" width="258px;" height="220px;">
+		  			<p class="project-title">Information form</p>
+		  		</a>
+		  	</div>
+		  	<div class="part_one">
+          <a href="https://codepen.io/yogesh8511/pen/vYYPEvw" target="_blank">
+		  			<iframe width="254px" height="220" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+		  			<p class="project-title">Build a product leading page</p>
+		  		</a>
+		  	</div>
+		  	<div class="part_one">
+          <a href="https://codepen.io/yogesh8511/pen/MWWxPOV">
+		  			<img src="https://i.ytimg.com/vi/08yflg_VVO8/maxresdefault.jpg" width="258px;" height="220px;">
+		  			<p class="project-title">Build a technical documentation</p>
+		  		</a>
+		  	</div>  
+		</div>
+	</section>
+
+	<section id="contact">
+		<h1>My project Follow</h1>
+		<a href=""><i class="fab fa-facebook-f"></i>Facebook</a>
+		<a href=""><i class="fab fa-twitter"></i>Twitter</a>
+		<a href="https://github.com/yogesh8511" target=_blank id="profile-link"><i class="fab fa-github"></i>Github</a>
+		<hr/>
+		<h1>All my project and my portfolio</h1>
+	</section>
+		
 
 </body>
 </html>
